@@ -29,7 +29,6 @@ namespace BagOfHolding
                         Console.WriteLine("What the hell are you trying to do?!");
                         break;
                 }
-                Console.WriteLine();
             }
         }
     }
@@ -40,7 +39,7 @@ namespace BagOfHolding
 
 
 
-
+// Skriver menuen og returnerer et brugerindtastet heltal
         public int options()
         {
             Console.WriteLine("1. Look in the Bag of Holding  ");
