@@ -47,6 +47,8 @@ namespace BagOfHolding
             Console.WriteLine("1. Look in the Bag of Holding  ");
             Console.WriteLine("2. Put an item into the Bag of Holding ");
             Console.WriteLine("3. Remove an item from the Bag of Holding  ");
+            Console.WriteLine();
+            Console.WriteLine("What would you like to do?");
         }
 //Kalder menufunktion og returnerer et brugerindtastet heltal
         public int options()
@@ -54,6 +56,7 @@ namespace BagOfHolding
             menu();
             return userinput();
         }
+//Skriver 'posens' indhold. Skriver at posen er tom hvis længden af contentsarray er mindre end 1, 
         public void contents()
         {
 
@@ -71,9 +74,9 @@ namespace BagOfHolding
                     cycle++;
                 }
             }
-            Console.ReadLine();
 
         }
+//Spørger brugeren hvad der skal tilføjes til posen og indsætter inputtet i contentsarray via et midlertidigt array
         public void add()
         {
             Console.WriteLine("What would you like to add?");
@@ -86,6 +89,7 @@ namespace BagOfHolding
             temp[contentsarray.Length] = stuff;
             contentsarray = temp;
         }
+ //Fjerner en værdi fra contentsarray via et midlertidigt array
         public void remove()
         {
             if (contentsarray.Length == 0)
